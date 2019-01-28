@@ -20,7 +20,7 @@ module.exports = {
   entry: {
     main: './src/main.ts',
     polyfills: './src/polyfills.ts',
-    styles: './src/styles.css'
+    styles: './src/styles.scss'
   },
 
   output: {
@@ -64,6 +64,10 @@ module.exports = {
         test: /\.css$/,
         use: ['to-string-loader', 'css-loader'],
         exclude: [resolve('./src/styles.css')]
+      },
+      {
+        test: /\.scss$/,
+        loader: ["raw-loader", "sass-loader?sourceMap"]
       },
       {
         test: /\.css$/,
