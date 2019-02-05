@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialogComponentComponent } from './dialog-component.component';
+import { AddToMatrixComponent } from './add-to-matrix.component';
 
-describe('DialogComponentComponent', () => {
-  let component: DialogComponentComponent;
-  let fixture: ComponentFixture<DialogComponentComponent>;
+describe('AddToMatrixComponent', () => {
+  let component: AddToMatrixComponent;
+  let fixture: ComponentFixture<AddToMatrixComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DialogComponentComponent ]
+      declarations: [ AddToMatrixComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DialogComponentComponent);
+    fixture = TestBed.createComponent(AddToMatrixComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

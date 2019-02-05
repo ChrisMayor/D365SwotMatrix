@@ -2,16 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatDialogModule } from '@angular/material';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { MatFormFieldModule, MatInputModule, MatButtonModule } from '@angular/material';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatFormFieldModule, MatInputModule, MatButtonModule,MatGridListModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DialogComponent } from './dialog-component/dialog-component.component';
+import { MatrixComponent } from './matrix/matrix.component';
+import { AddToMatrixComponent } from './add-to-matrix/add-to-matrix.component';
+import {MatNativeDateModule} from '@angular/material';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogComponent
+    MatrixComponent,
+    AddToMatrixComponent
   ],
   imports: [
     BrowserModule,
@@ -21,12 +25,16 @@ import { DialogComponent } from './dialog-component/dialog-component.component';
     MatInputModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [
-    DialogComponent
+    AppComponent
   ],
 })
 export class AppModule { }
