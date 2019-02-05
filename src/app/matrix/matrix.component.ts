@@ -17,35 +17,25 @@ export interface Tile {
 
 export class MatrixComponent {
   strength = [
-    'Get to work',
-    'Pick up groceries',
-    'Go home',
-    'Fall asleep'
+    'Market share',
+    'People',
+    'Technology'
   ];
 
   weakness = [
-    'Get up',
-    'Brush teeth',
-    'Take a shower',
-    'Check e-mail',
-    'Walk dog'
+    'Gaps in functionality',
+    'Understanding of customer processes'
   ];
 
   chance = [
-    'Get up',
-    'Brush teeth',
-    'Take a shower',
-    'Check e-mail',
-    'Walk dog'
+    'Next version',
+    'Connections to customer'
   ];
 
 
   risk = [
-    'Get up',
-    'Brush teeth',
-    'Take a shower',
-    'Check e-mail',
-    'Walk dog'
+    'Competitors',
+    'Price to high'
   ];
 
 

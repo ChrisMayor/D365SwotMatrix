@@ -1,30 +1,81 @@
-<mat-grid-list cols="2" rowHeight="2:1" rowHeight="100px">
-  <mat-grid-tile style.background="blue">
-    <h2>Stärken</h2>
-    <div cdkDropList #strengthList="cdkDropList" [cdkDropListData]="strength" [cdkDropListConnectedTo]="[weaknessList]" class="example-list"
-      (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of strength" cdkDrag>{{item}}</div>
-    </div>
-  </mat-grid-tile>
-  <mat-grid-tile style.background="yellow">
-    <h2>Schwächen</h2>
-    <div cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="weakness" [cdkDropListConnectedTo]="[strengthList]" class="example-list"
-      (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of weakness" cdkDrag>{{item}}</div>
-    </div>
-  </mat-grid-tile>
-  <mat-grid-tile style.background="green">
-    <h2>Chancen</h2>
-    <div cdkDropList #chanceList="cdkDropList" [cdkDropListData]="chance" [cdkDropListConnectedTo]="[strengthList]" class="example-list"
-      (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of chance" cdkDrag>{{item}}</div>
-    </div>
-  </mat-grid-tile>
-  <mat-grid-tile style.background="red">
-    <h2>Risiken</h2>
-    <div cdkDropList #riskList="cdkDropList" [cdkDropListData]="risk" [cdkDropListConnectedTo]="[strengthList]" class="example-list"
-      (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of risk" cdkDrag>{{item}}</div>
-    </div>
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="matrix-container" cdkDropListGroup>
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile style.background="blue">
+      <div class="div-hauptcontainer">
+
+        <div class="div-container1">
+          <h2 class="matrixText">Strength</h2>
+        </div>
+
+        <div class="div-container2">
+          <div cdkDropList #strengthList="cdkDropList" [cdkDropListData]="strength" 
+            class="matrix-list" (cdkDropListDropped)="drop($event)">
+            <div class="matrix-box" *ngFor="let item of strength" cdkDrag>{{item}}</div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </mat-grid-tile>
+    <mat-grid-tile style.background="yellow">
+      <div class="div-hauptcontainer">
+        <div class="div-container1">
+          <h2 class="matrixText">Weakness</h2>
+        </div>
+
+        <div class="div-container2">
+          <div cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="weakness" 
+            class="matrix-list" (cdkDropListDropped)="drop($event)">
+            <div class="matrix-box" *ngFor="let item of weakness" cdkDrag>{{item}}</div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </mat-grid-tile>
+    <mat-grid-tile style.background="green">
+
+        <div class="div-hauptcontainer">
+
+            <div class="div-container1">
+              <h2 class="matrixText">Chance</h2>
+            </div>
+    
+            <div class="div-container2">
+                <div cdkDropList #chanceList="cdkDropList" [cdkDropListData]="chance" 
+                class="matrix-list" (cdkDropListDropped)="drop($event)">
+                <div class="matrix-box" *ngFor="let item of chance" cdkDrag>{{item}}</div>
+              </div>
+            </div>
+    
+          </div>
+
+    
+      
+    </mat-grid-tile>
+
+
+    <mat-grid-tile style.background="red">
+
+        <div class="div-hauptcontainer">
+
+            <div class="div-container1">
+              <h2 class="matrixText">Risk</h2>
+            </div>
+    
+            <div class="div-container2">
+                <div cdkDropList #riskList="cdkDropList" [cdkDropListData]="risk"  class="matrix-list"
+                (cdkDropListDropped)="drop($event)">
+                <div class="matrix-box" *ngFor="let item of risk" cdkDrag>{{item}}</div>
+              </div>
+            </div>
+    
+          </div>
+ 
+     
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
