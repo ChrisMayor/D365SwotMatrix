@@ -1,54 +1,69 @@
 <div class="matrix-container" cdkDropListGroup>
   <mat-grid-list cols="2" rowHeight="2:1">
-    <mat-grid-tile style.background="blue">
+    <mat-grid-tile class="title-strength">
       <div class="div-hauptcontainer">
 
         <div class="div-container1">
-          <h2 class="matrixText">Strength</h2>
+          <h3 class="matrixText">Strength</h3>
         </div>
 
         <div class="div-container2">
-          <div cdkDropList #strengthList="cdkDropList" [cdkDropListData]="strength" 
+          <div *ngIf="strength.length > 0" cdkDropList #strengthList="cdkDropList" [cdkDropListData]="strength" 
             class="matrix-list" (cdkDropListDropped)="drop($event)">
             <div class="matrix-box" *ngFor="let item of strength" cdkDrag>{{item}}</div>
           </div>
-        </div>
-
-      </div>
-
-
-
-    </mat-grid-tile>
-    <mat-grid-tile style.background="yellow">
-      <div class="div-hauptcontainer">
-        <div class="div-container1">
-          <h2 class="matrixText">Weakness</h2>
-        </div>
-
-        <div class="div-container2">
-          <div cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="weakness" 
+          <div *ngIf="strength.length == 0" cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="strength" 
             class="matrix-list" (cdkDropListDropped)="drop($event)">
-            <div class="matrix-box" *ngFor="let item of weakness" cdkDrag>{{item}}</div>
+            <div class="emptyText">empty</div>
           </div>
         </div>
 
       </div>
 
 
+
     </mat-grid-tile>
-    <mat-grid-tile style.background="green">
+    <mat-grid-tile class="title-weakness">
+      <div class="div-hauptcontainer">
+        <div class="div-container1">
+          <h3 class="matrixText">Weakness</h3>
+        </div>
+
+        <div class="div-container2">
+          <div *ngIf="weakness.length > 0" cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="weakness" 
+            class="matrix-list" (cdkDropListDropped)="drop($event)">
+            <div  class="matrix-box" *ngFor="let item of weakness" cdkDrag>{{item}}</div>
+          </div>
+          <div *ngIf="weakness.length == 0" cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="weakness" 
+            class="matrix-list" (cdkDropListDropped)="drop($event)">
+            <div class="emptyText">empty</div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </mat-grid-tile>
+    <mat-grid-tile class="title-opp">
 
         <div class="div-hauptcontainer">
 
             <div class="div-container1">
-              <h2 class="matrixText">Chance</h2>
+              <h3 class="matrixText">Opportunity</h3>
             </div>
     
             <div class="div-container2">
-                <div cdkDropList #chanceList="cdkDropList" [cdkDropListData]="chance" 
+                <div *ngIf="chance.length > 0" cdkDropList #chanceList="cdkDropList" [cdkDropListData]="chance" 
                 class="matrix-list" (cdkDropListDropped)="drop($event)">
-                <div class="matrix-box" *ngFor="let item of chance" cdkDrag>{{item}}</div>
+                <div class="matrix-box" *ngFor="let item of chance" cdkDrag>
+                  <div>{{item}}</div><div (click)="remove(item)">X</div>
+                </div>
               </div>
+              <div *ngIf="chance.length == 0" cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="chance" 
+            class="matrix-list" (cdkDropListDropped)="drop($event)">
+            <div class="emptyText">empty</div>
+          </div>
             </div>
     
           </div>
@@ -58,19 +73,23 @@
     </mat-grid-tile>
 
 
-    <mat-grid-tile style.background="red">
+    <mat-grid-tile class="title-risk">
 
         <div class="div-hauptcontainer">
 
             <div class="div-container1">
-              <h2 class="matrixText">Risk</h2>
+              <h3 class="matrixText">Risk</h3>
             </div>
     
             <div class="div-container2">
-                <div cdkDropList #riskList="cdkDropList" [cdkDropListData]="risk"  class="matrix-list"
+                <div *ngIf="risk.length > 0" cdkDropList #riskList="cdkDropList" [cdkDropListData]="risk"  class="matrix-list"
                 (cdkDropListDropped)="drop($event)">
                 <div class="matrix-box" *ngFor="let item of risk" cdkDrag>{{item}}</div>
               </div>
+              <div *ngIf="risk.length == 0" cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="risk" 
+            class="matrix-list" (cdkDropListDropped)="drop($event)">
+            <div class="emptyText">empty</div>
+          </div>
             </div>
     
           </div>

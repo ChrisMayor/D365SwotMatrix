@@ -1,5 +1,4 @@
 import {Component, Inject} from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 
 export interface DialogData {
   animal: string;
@@ -17,7 +16,7 @@ export interface DialogData {
 export class AppComponent {
 
 
-  constructor(public dialog: MatDialog) {}
+  constructor() {}
 
 
 }
