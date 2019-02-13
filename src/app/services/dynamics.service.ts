@@ -34,7 +34,7 @@ export class DynamicsService {
     if (Xrm != null) {
 
     }
-    return returnValue;
+    return returnValue;;
 
   }
 }
