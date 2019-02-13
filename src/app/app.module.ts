@@ -9,13 +9,15 @@ import { MatrixComponent } from './matrix/matrix.component';
 import { AddToMatrixComponent } from './add-to-matrix/add-to-matrix.component';
 import {MatNativeDateModule} from '@angular/material';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { MatrixTileComponent } from './matrix-tile/matrix-tile.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MatrixComponent,
-    AddToMatrixComponent
+    AddToMatrixComponent,
+    MatrixTileComponent
   ],
   imports: [
     BrowserModule,

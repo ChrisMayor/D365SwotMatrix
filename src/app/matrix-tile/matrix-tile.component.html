@@ -1,0 +1,31 @@
+<div class="div-hauptcontainer">
+
+  <div class="div-container1">
+    <h3 class="matrixText">{{name}}</h3>
+    <h3 class="matrixPlus" (click)="add(chance)">+</h3>
+  </div>
+
+
+  <div class="div-container2">
+    <div *ngIf="chance.length > 0" cdkDropList #chanceList="cdkDropList" [cdkDropListData]="chance" class="matrix-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="matrix-box" *ngFor="let item of chance" cdkDrag>
+        <div *ngIf="!item.isEditing" class="buttontext">
+          <div class="text">{{item.text}}</div>
+          <div class="buttons" (click)="edit(item, chance)">E</div>
+          <div class="buttons" (click)="remove(item, chance)">X</div>
+        </div>
+        <div *ngIf="item.isEditing" class="buttontext">
+          <input type="text" class="form-control text" [(ngModel)]="item.text" name="text">
+          <div class="buttons" (click)="unedit(item, chance)">OK</div>
+        </div>
+
+      </div>
+    </div>
+    <div *ngIf="chance.length == 0" cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="chance" class="matrix-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="emptyText">empty</div>
+    </div>
+  </div>
+
+</div>

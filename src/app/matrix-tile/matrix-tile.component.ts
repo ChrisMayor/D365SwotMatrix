@@ -1,46 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input  } from '@angular/core';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 import { swotCategory } from '../model/swotCategory';
 import { swotItem } from '../model/swotItem';
 
-
-export interface Tile {
-  color: string;
-  cols: number;
-  rows: number;
-  text: string;
-}
-
 @Component({
-  selector: 'app-matrix',
-  templateUrl: './matrix.component.html',
-  styleUrls: ['./matrix.component.scss']
+  selector: 'app-matrix-tile',
+  templateUrl: './matrix-tile.component.html',
+  styleUrls: ['./matrix-tile.component.scss']
 })
+export class MatrixTileComponent implements OnInit {
 
-export class MatrixComponent {
-  strength : swotItem[] = [
-    {text:'Market share', isEditing:false},
-    {text:'People', isEditing:false},
-    {text:'Technology', isEditing:false}
-  ];
-
-  weakness : swotItem[] = [
-    {text:'Gaps in functionality', isEditing:false},
-    {text:'Understanding of customer processes', isEditing:false}
-  ];
+  @Input() name: string;
 
   chance : swotItem[] = [
     {text:'Next version', isEditing:false},
     {text:'Connections to customer', isEditing:false}
   ];
 
+  constructor() { }
 
-  threat : swotItem[] = [
-    {text:'Competitors', isEditing:false},
-    {text:'Price too high', isEditing:false}
-  ];
+  ngOnInit() {
+  }
 
- 
   remove(item:swotItem,list: swotItem[])
   {
     let index = list.findIndex(x => x.text == item.text);
@@ -73,4 +54,6 @@ export class MatrixComponent {
                           event.previousIndex,
                           event.currentIndex);
       }
-}}
+}
+
+}

@@ -1,0 +1,144 @@
+.div-hauptcontainer { 
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height:100%;
+    float: left;
+
+    .matrix-list {
+      border: solid 1px #ccc;
+      background: white;
+      border-radius: 4px;
+      overflow: hidden;
+      display: block;
+  
+      .emptyText
+      {
+        text-align: center;
+        background: grey;
+      }
+    }
+
+    .matrix-box {
+        padding: 10px 5px ;
+        border-bottom: solid 1px #ccc;
+        color: rgba(0, 0, 0, 0.87);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        cursor: move;
+        background: white;
+        font-size: 14px;
+       
+        .buttontext {
+          width:100%;
+          .buttons {
+    
+            float:right;
+          }
+      
+          .text {
+            min-width: 80%;
+            float:left;
+          }
+        }
+    
+        
+        
+      }
+
+    .div-container1 { 
+        float: both; 
+        margin-left: 0px; 
+        margin-top: 0px; 
+        width: 100%;
+        height:15%;
+        position: relative;
+        user-select: none;
+
+
+        
+        
+
+        .matrixText {
+            text-align: center;
+            margin-block-start: 1%;
+            margin-block-end: 1%;
+              color: #222;
+text-shadow: 0px 2px 3px #555;
+        }
+
+        .matrixPlus {
+          position: absolute;
+          text-align: center;
+          margin-block-start: 1%;
+          margin-block-end: 1%;
+            color: #222;
+text-shadow: 0px 2px 3px #555;
+right: 0px; top: 0px; 
+      }
+
+        /*margin: 50px auto;
+        text-align: center;
+        text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+        color: #333;
+        opacity: 0.4;
+        font: 700 80px 'Bitter';*/
+     
+        
+        }
+        
+        .div-container2 { 
+        float: both; 
+        margin-left: 0px; 
+        margin-top: 0px; 
+        max-height: 400px;
+        overflow-y:auto;
+        overflow-x:hidden;
+        height:80%;
+        }
+    
+    }
+
+    
+  .cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+
+                .buttontext {
+                  width:100%;
+                  .buttons {
+            
+                    float:right;
+                  }
+              
+                  .text {
+                    min-width: 80%;
+                    float:left;
+                  }
+                }
+  }
+  
+  .cdk-drag-placeholder {
+    opacity: 0;
+  }
+  
+  .cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .example-box:last-child {
+    border: none;
+  }
+  
+  .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+    
+    
