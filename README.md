@@ -1,3 +1,18 @@
+# SWOT Matix: Angular 7 / Webpack 4 / To Dynamics Webresource
+
+Highlights:
+
+* 2 Build-Methods possible (Angular or Webpack)
+* Angular 7.x
+* Angular Material
+* Angular CDK
+* Drag and Drop
+* Webpack 4.x
+
+Idea to include in Dynamics Webresource (with the deployment tool) to get a custom Webresource with Angular 7 / Angular Material
+Prove that the Production Build really gets super small, even with Angular and Angular Material
+This project was generated with Angular CLI version 7.2.0.
+
 # CustomWebpack
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
