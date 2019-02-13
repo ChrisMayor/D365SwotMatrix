@@ -34,6 +34,7 @@
     "@fortawesome/fontawesome-free": "^5.7.2",
     "@ngtools/webpack": "^7.3.1",
     "@types/node": "~8.9.4",
+    "@types/xrm": "^9.0.11",
     "circular-dependency-plugin": "^5.0.2",
     "codelyzer": "~4.5.0",
     "copy-webpack-plugin": "^4.6.0",
