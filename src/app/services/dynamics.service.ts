@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { swotItem } from '../model/swotItem';
+import { swotItemCollection } from '../model/swotItemCollection';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -9,22 +10,31 @@ export class DynamicsService {
 
   constructor() { }
 
-  public convertToText(items: swotItem[]): string {
+  private convertToText(items: swotItem[]): string {
     let returnValue: string = "";
     items.forEach(x => returnValue = returnValue + x.text + "\r\n");
     return returnValue;
   }
 
-  public writeSwotToDynamics(): void {
+  private convertToItems(text: string): swotItem[] {
+    let itemsArray: string[] = text.split("\r\n");
+    let returnValue: swotItem[] = [];
+    itemsArray.forEach(x => returnValue.push({ text: x, isEditing: false }));
+    return returnValue;
+  }
+
+  public writeSwotToDynamics(sowtItems: swotItemCollection[]): void {
     if (Xrm != null) {
 
     }
   }
 
-  public readSwotFromDynamics() {
+  public readSwotFromDynamics() : swotItemCollection[]{
+    let returnValue: swotItemCollection[] = [];
     if (Xrm != null) {
 
     }
+    return returnValue;
 
   }
 }
