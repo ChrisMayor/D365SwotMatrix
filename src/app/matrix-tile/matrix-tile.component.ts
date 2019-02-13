@@ -12,7 +12,7 @@ export class MatrixTileComponent implements OnInit {
 
   @Input() name: string;
 
-  chance : swotItem[] = [
+  itemList : swotItem[] = [
     {text:'Next version', isEditing:false},
     {text:'Connections to customer', isEditing:false}
   ];

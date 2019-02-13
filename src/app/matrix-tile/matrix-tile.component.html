@@ -2,27 +2,27 @@
 
   <div class="div-container1">
     <h3 class="matrixText">{{name}}</h3>
-    <h3 class="matrixPlus" (click)="add(chance)">+</h3>
+    <h3 class="matrixPlus" (click)="add(itemList)">+</h3>
   </div>
 
 
   <div class="div-container2">
-    <div *ngIf="chance.length > 0" cdkDropList #chanceList="cdkDropList" [cdkDropListData]="chance" class="matrix-list"
+    <div *ngIf="itemList.length > 0" cdkDropList #chanceList="cdkDropList" [cdkDropListData]="itemList" class="matrix-list"
       (cdkDropListDropped)="drop($event)">
-      <div class="matrix-box" *ngFor="let item of chance" cdkDrag>
+      <div class="matrix-box" *ngFor="let item of itemList" cdkDrag>
         <div *ngIf="!item.isEditing" class="buttontext">
           <div class="text">{{item.text}}</div>
-          <div class="buttons" (click)="edit(item, chance)">E</div>
-          <div class="buttons" (click)="remove(item, chance)">X</div>
+          <div class="buttons" (click)="remove(item, itemList)"><i class="fas fa-trash"></i></div>
+          <div class="buttons" (click)="edit(item, itemList)"><i class="fas fa-edit"></i></div>
         </div>
         <div *ngIf="item.isEditing" class="buttontext">
           <input type="text" class="form-control text" [(ngModel)]="item.text" name="text">
-          <div class="buttons" (click)="unedit(item, chance)">OK</div>
+          <div class="buttons" (click)="unedit(item, itemList)"><i class="fas fa-check"></i></div>
         </div>
 
       </div>
     </div>
-    <div *ngIf="chance.length == 0" cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="chance" class="matrix-list"
+    <div *ngIf="itemList.length == 0" cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="itemList" class="matrix-list"
       (cdkDropListDropped)="drop($event)">
       <div class="emptyText">empty</div>
     </div>
