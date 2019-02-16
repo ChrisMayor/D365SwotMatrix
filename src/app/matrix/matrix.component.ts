@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
-import { swotCategory } from '../model/swotCategory';
+import { DynamicsService } from "../services/dynamics.service"
 import { swotItem } from '../model/swotItem';
+import { swotCategory } from '../model/swotCategory';
+import { swotItemCollection } from '../model/swotItemCollection';
 
 
 export interface Tile {
@@ -17,6 +18,73 @@ export interface Tile {
   styleUrls: ['./matrix.component.scss']
 })
 
-export class MatrixComponent {
-  
+export class MatrixComponent implements OnInit {
+
+
+  strengthArray: swotItem[] = [];
+  weaknessArray: swotItem[] = [];
+  opportunityArray: swotItem[] = [];
+  treathArray: swotItem[] = [];
+  /**
+   *
+   */
+  constructor(private dynamicsService: DynamicsService) {
+
+
+  }
+
+
+
+  persist(event) {
+    let itemcollection :swotItemCollection[] = [];
+
+    this.strengthArray.forEach(i => {
+      itemcollection.push({ item: i, category: swotCategory.Strength });
+    })
+
+    this.weaknessArray.forEach(i => {
+      itemcollection.push({ item: i, category: swotCategory.Weakness });
+    })
+
+    this.opportunityArray.forEach(i => {
+      itemcollection.push({ item: i, category: swotCategory.Opportunity });
+    })
+
+    this.treathArray.forEach(i => {
+      itemcollection.push({ item: i, category: swotCategory.Threats });
+    })
+
+    this.dynamicsService.writeSwotToDynamics(itemcollection);
+  }
+
+
+  ngOnInit() {
+
+    let dynamicsData = this.dynamicsService.readSwotFromDynamics();
+
+
+    dynamicsData.forEach(i => {
+      switch (i.category) {
+        case swotCategory.Strength:
+          this.strengthArray.push(i.item);
+          break;
+        case swotCategory.Weakness:
+          this.weaknessArray.push(i.item);
+          break;
+        case swotCategory.Opportunity:
+          this.opportunityArray.push(i.item);
+          break;
+        case swotCategory.Threats:
+          this.treathArray.push(i.item);
+          break;
+      }
+    
+
+
+
+    
+  }
+  )
+  }
+
 }

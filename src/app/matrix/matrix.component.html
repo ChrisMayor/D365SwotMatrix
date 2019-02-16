@@ -1,16 +1,16 @@
 <div class="matrix-container" cdkDropListGroup>
   <mat-grid-list cols="2" rowHeight="2:1">
     <mat-grid-tile class="tile-strength">
-      <app-matrix-tile class="div-hauptcontainer" name="Strength" id="strength"></app-matrix-tile>
+      <app-matrix-tile class="div-hauptcontainer" name="Strength" id="strength" [itemList]="strengthArray" (change)="persist($event)"></app-matrix-tile>></app-matrix-tile>
     </mat-grid-tile>
     <mat-grid-tile class="tile-weakness">
-      <app-matrix-tile class="div-hauptcontainer" name="Weakness" id="weakness"></app-matrix-tile>
+      <app-matrix-tile class="div-hauptcontainer" name="Weakness" id="weakness" [itemList]="weaknessArray" (change)="persist($event)"></app-matrix-tile>
     </mat-grid-tile>
     <mat-grid-tile class="tile-opp">
-      <app-matrix-tile class="div-hauptcontainer" name="Opportunity" id="opportunity"></app-matrix-tile>
+      <app-matrix-tile class="div-hauptcontainer" name="Opportunity" id="opportunity" [itemList]="opportunityArray" (change)="persist($event)"></app-matrix-tile>
     </mat-grid-tile>
     <mat-grid-tile class="tile-threat">
-      <app-matrix-tile class="div-hauptcontainer" name="Threat" id="threat"></app-matrix-tile>
+      <app-matrix-tile class="div-hauptcontainer" name="Threat" id="threat" [itemList]="treathArray" (change)="persist($event)"></app-matrix-tile>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

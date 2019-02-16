@@ -1,4 +1,4 @@
-import { Component, OnInit,Input  } from '@angular/core';
+import { Component, OnInit,Input,Output, EventEmitter   } from '@angular/core';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 import { swotCategory } from '../model/swotCategory';
 import { swotItem } from '../model/swotItem';
@@ -11,12 +11,10 @@ import { swotItem } from '../model/swotItem';
 export class MatrixTileComponent implements OnInit {
 
   @Input() name: string;
+  @Input() itemList: swotItem[];
+  @Output() change: EventEmitter<string> = new EventEmitter<string>();
 
-  itemList : swotItem[] = [
-    {text:'Next version', isEditing:false},
-    {text:'Connections to customer', isEditing:false}
-  ];
-
+ 
   constructor() { }
 
   ngOnInit() {
@@ -26,6 +24,7 @@ export class MatrixTileComponent implements OnInit {
   {
     let index = list.findIndex(x => x.text == item.text);
     list.splice(index,1);
+    this.change.emit(item.text);
   }
 
    
@@ -37,11 +36,13 @@ export class MatrixTileComponent implements OnInit {
   unedit(item:swotItem,list: swotItem[])
   {
     item.isEditing = false;
+    this.change.emit(item.text);
   }
 
   add(list: swotItem[])
   {
     list.push({ text : "new", isEditing:false});
+    this.change.emit("new");
   }
 
   drop(event: CdkDragDrop<swotItem[]>) {
