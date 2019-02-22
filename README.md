@@ -3,7 +3,7 @@ Angular 7 / Webpack 4 / To Dynamics Webresource
 
 ## Screenshots
 
-## Highlights:
+## Highlights
 
 * 2 ways to build the application (Angular or Webpack) -- ng build prefered
 * Angular 7.x
