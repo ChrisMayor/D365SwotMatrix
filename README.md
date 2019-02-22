@@ -1,6 +1,8 @@
 # Account SWOT Matix for Dynamics 365
 Angular 7 / Webpack 4 / To Dynamics Webresource
 
+## Screenshots
+
 ## Highlights:
 
 * 2 ways to build the application (Angular or Webpack) -- ng build prefered
@@ -22,4 +24,6 @@ This project was generated with Angular CLI version 7.2.0.
 
 * D365 8.2 / 9.x on premise for the Form-Integration
 * D365 9.0 for Web Api Integration
+
+## Demo
 
