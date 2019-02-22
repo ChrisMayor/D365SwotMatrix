@@ -1,5 +1,5 @@
-# Account SWOT Matix for Dynamics 365
-Angular 7 / Webpack 4 / To Dynamics Webresource
+# Account SWOT Matrix for Dynamics 365 (8.2 or 9.x)
+Angular 7 / Webpack 4 / Dynamics Webresource
 
 ## Screenshots
 
@@ -12,6 +12,7 @@ Angular 7 / Webpack 4 / To Dynamics Webresource
 * Drag and Drop
 * Webpack 4.x
 * Integration with D365 Form oder D365 Web Api
+* Works in Classic UI and Unified Interface
 
 ## Description
 
