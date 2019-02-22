@@ -1,4 +1,4 @@
-# Account SWOT Matix for Dynamics 365: 
+# Account SWOT Matix for Dynamics 365
 Angular 7 / Webpack 4 / To Dynamics Webresource
 
 ## Highlights:
@@ -11,7 +11,10 @@ Angular 7 / Webpack 4 / To Dynamics Webresource
 * Webpack 4.x
 * Integration with D365 Form oder D365 Web Api
 
-Idea to include in Dynamics Webresource (with the deployment tool) to get a custom Webresource with Angular 7 / Angular Material
+## Description
+
+Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource.
+
 Prove that the Production Build really gets super small, even with Angular and Angular Material
 This project was generated with Angular CLI version 7.2.0.
 
