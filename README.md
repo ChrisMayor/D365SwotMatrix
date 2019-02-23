@@ -40,3 +40,13 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Demo
 
+
+## Some todos
+
+This is just a small project I did after my normal full time job, so there are still some open points:
+
+* Unit testing
+* Configuration of the matrix with a separate configuration entity
+* CI integration
+...
+
