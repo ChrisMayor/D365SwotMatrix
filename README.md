@@ -30,7 +30,7 @@ Based on Angular 7 / Webpack 4 / Dynamics Webresource
 
 Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource.
 
-Prove that the Production Build really gets super small, even with Angular and Angular Material
+Prove that the production build gets really super small (currently ~500kb), even with Angular and Angular Material
 This project was generated with Angular CLI version 7.2.0.
 
 ## Minimum requirements:
