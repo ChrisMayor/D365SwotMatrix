@@ -1,5 +1,17 @@
 # Account SWOT Matrix for Dynamics 365 (8.2 or 9.x)
-Angular 7 / Webpack 4 / Dynamics Webresource
+
+SWOT-Matrix Control for Dynamics 365 (8.2 or 9.x) which can be added as web ressource to the account or opportunity form.
+
+The swot matrix helps the sales people to identify the
+
+* Stenghts (internal)
+* Weaknesses (internal)
+* Opportunities (external)
+* Threads (external)
+
+from the sight of your company, to make business with an account / or to win an opportunity.
+
+Based on Angular 7 / Webpack 4 / Dynamics Webresource
 
 ## Screenshots
 
