@@ -13,7 +13,18 @@ from the sight of your company, to make business with an account / or to win an 
 
 Based on Angular 7 / Webpack 4 / Dynamics Webresource
 
-## Screenshots
+## Screenshots Unified Interface
+
+<p align="center">
+  <img src="../master/Screenshots/empty-unified.JPG" title="empty matrix / unified interface">
+    <img src="../master/Screenshots/filled-unified.JPG" title="filled matrix / unified interface">
+</p>
+
+## Screenshots Classic Interface
+
+<p align="center">
+  <img src="../master/Screenshots/filled-classic.JPG" title="filled matrix / classic interface">
+</p>
 
 ## Highlights
 
@@ -40,6 +51,9 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Demo
 
+<p align="center">
+  <img src="../master/Screenshots/Demo.gif" title="Demo">
+</p>
 
 ## Some todos
 
