@@ -13,24 +13,6 @@ from the sight of your company, to make business with an account / or to win an 
 
 Based on Angular 7 / Webpack 4 / Angular Material / Angular CDK / Dynamics Webresource
 
-## Download Managed Solution
-
-### V1.0 Managed Solution for Account and Opportunity Form
-
-
-## Screenshots Unified Interface
-
-<p align="center">
-  <img src="../master/Screenshots/empty-unified.JPG" title="empty matrix / unified interface">
-    <img src="../master/Screenshots/filled-unified.JPG" title="filled matrix / unified interface">
-</p>
-
-## Screenshots Classic Interface
-
-<p align="center">
-  <img src="../master/Screenshots/filled-classic.JPG" title="filled matrix / classic interface">
-</p>
-
 ## Highlights
 
 * 2 ways to build the application (Angular or Webpack) -- Angular build prefered
@@ -51,14 +33,27 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Minimum requirements:
 
+* D365 9.x for Web Api Integration (onprem, online) (current release and managed solution) - not tested on 8.x but should also work there
+
 * Dynamics 365 8.2 / 9.x on premise or online for form integration (managed solution / manual currently not available - since not the preferred way)
 
-Pro: SWOT Matrix already available in create form<br/>
-Con: SWOT Matrix <-> form communication via parent.xrm
+## Download Managed Solution
 
-* D365 9.x for Web Api Integration
+### V1.0 Managed Solution for Account and Opportunity Form
 
-The prefered way, but not available at create
+
+## Screenshots Unified Interface
+
+<p align="center">
+  <img src="../master/Screenshots/empty-unified.JPG" title="empty matrix / unified interface">
+    <img src="../master/Screenshots/filled-unified.JPG" title="filled matrix / unified interface">
+</p>
+
+## Screenshots Classic Interface
+
+<p align="center">
+  <img src="../master/Screenshots/filled-classic.JPG" title="filled matrix / classic interface">
+</p>
 
 ## Demo
 
