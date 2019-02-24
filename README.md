@@ -69,7 +69,7 @@ This is just a small project I did after my normal full time job, so there are s
 * CI integration
 * Some UI enhancements
 * Write manual for the 8.x form integration
-* Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable
+* Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
 
 ## Questions
 
