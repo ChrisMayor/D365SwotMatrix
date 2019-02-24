@@ -62,5 +62,10 @@ This is just a small project I did after my normal full time job, so there are s
 * Unit testing
 * Configuration of the matrix with a separate configuration entity
 * CI integration
+* Some UI enhancements
+
+## Questions
+
+* Drop me an issue or contact me github [((at))] it-integrator.de
 ...
 
