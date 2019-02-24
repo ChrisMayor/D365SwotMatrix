@@ -52,10 +52,13 @@ This project was generated with Angular CLI version 7.2.0.
 ## Minimum requirements:
 
 * Dynamics 365 8.2 / 9.x on premise or online for form integration (managed solution / manual currently not available - since not the preferred way)
-** Pro: SWOT Matrix already available in create form
-** Con: SWOT Matrix <-> form communication via parent.xrm
+
+Pro: SWOT Matrix already available in create form
+Con: SWOT Matrix <-> form communication via parent.xrm
+
 * D365 9.x for Web Api Integration
-** The prefered way, but not available at create
+
+The prefered way, but not available at create
 
 ## Demo
 
