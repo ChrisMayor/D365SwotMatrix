@@ -13,6 +13,11 @@ from the sight of your company, to make business with an account / or to win an 
 
 Based on Angular 7 / Webpack 4 / Dynamics Webresource
 
+## Download managed Solution
+
+### V1.0 Managed Solution for Account and Opportunity Form
+
+
 ## Screenshots Unified Interface
 
 <p align="center">
@@ -66,7 +71,7 @@ This is just a small project I did after my normal full time job, so there are s
 
 ## Questions
 
-* Drop me an issue or contact me github [((at))] it-integrator.de
+* Drop me an issue or an email: github [((at))] it-integrator.de
 ...
 
 <a href="../master/legal.imprint.md">Impressum / Imprint</a>
