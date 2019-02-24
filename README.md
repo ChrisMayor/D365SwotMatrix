@@ -1,42 +1,52 @@
-# SWOT Matix: Angular 7 / Webpack 4 / To Dynamics Webresource
+# Account SWOT Matrix for Dynamics 365 (8.2 or 9.x)
 
-Highlights:
+SWOT-Matrix Control for Dynamics 365 (8.2 or 9.x) which can be added as web ressource to the account or opportunity form.
 
-* 2 Build-Methods possible (Angular or Webpack)
+The swot matrix helps the sales people to identify the
+
+* Stenghts (internal)
+* Weaknesses (internal)
+* Opportunities (external)
+* Threads (external)
+
+from the sight of your company, to make business with an account / or to win an opportunity.
+
+Based on Angular 7 / Webpack 4 / Dynamics Webresource
+
+## Screenshots
+
+## Highlights
+
+* 2 ways to build the application (Angular or Webpack) -- ng build prefered
 * Angular 7.x
 * Angular Material
 * Angular CDK
 * Drag and Drop
 * Webpack 4.x
+* Integration with D365 Form oder D365 Web Api
+* Works in Classic UI and Unified Interface
 
-Idea to include in Dynamics Webresource (with the deployment tool) to get a custom Webresource with Angular 7 / Angular Material
-Prove that the Production Build really gets super small, even with Angular and Angular Material
+## Description
+
+Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource.
+
+Prove that the production build gets really super small (currently ~500kb), even with Angular and Angular Material
 This project was generated with Angular CLI version 7.2.0.
 
-# CustomWebpack
+## Minimum requirements:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+* D365 8.2 / 9.x on premise for the Form-Integration
+* D365 9.0 for Web Api Integration
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Some todos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This is just a small project I did after my normal full time job, so there are still some open points:
 
-## Build
+* Unit testing
+* Configuration of the matrix with a separate configuration entity
+* CI integration
+...
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
