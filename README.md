@@ -69,3 +69,4 @@ This is just a small project I did after my normal full time job, so there are s
 * Drop me an issue or contact me github [((at))] it-integrator.de
 ...
 
+<a href="../master/legal.imprint.md">Impressum / Imprint</a>
