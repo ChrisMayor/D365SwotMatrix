@@ -1,8 +1,8 @@
-# Account SWOT Matrix for Dynamics 365 (8.2 or 9.x)
+# Account / Opportunity SWOT Matrix for Dynamics 365 (8.2 or 9.x)
 
-SWOT-Matrix Control for Dynamics 365 (8.2 or 9.x) which can be added as web ressource to the account or opportunity form.
+SWOT-Matrix Control for Dynamics 365 (8.2 or 9.x), which can be added as web ressource to the account or opportunity form.
 
-The swot matrix helps the sales people to identify the
+The SWOT matrix helps the sales people to identify the
 
 * Stenghts (internal)
 * Weaknesses (internal)
@@ -13,7 +13,7 @@ from the sight of your company, to make business with an account / or to win an 
 
 Based on Angular 7 / Webpack 4 / Angular Material / Angular CDK / Dynamics Webresource
 
-## Download managed Solution
+## Download Managed Solution
 
 ### V1.0 Managed Solution for Account and Opportunity Form
 
@@ -33,7 +33,7 @@ Based on Angular 7 / Webpack 4 / Angular Material / Angular CDK / Dynamics Webre
 
 ## Highlights
 
-* 2 ways to build the application (Angular or Webpack) -- ng build prefered
+* 2 ways to build the application (Angular or Webpack) -- Angular build prefered
 * Angular 7.x
 * Angular Material
 * Angular CDK
@@ -46,13 +46,13 @@ Based on Angular 7 / Webpack 4 / Angular Material / Angular CDK / Dynamics Webre
 
 Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource.
 
-Prove that the production build gets really super small (currently ~500kb), even with Angular and Angular Material
+Proves that the production build gets really super small (currently ~500kb), even with Angular and Angular Material
 This project was generated with Angular CLI version 7.2.0.
 
 ## Minimum requirements:
 
-* D365 8.2 / 9.x on premise for the Form-Integration
-* D365 9.0 for Web Api Integration
+* Dynamics 365 8.2 / 9.x on premise or online for form integration (solution / manual currently not available)
+* D365 9.x for Web Api Integration
 
 ## Demo
 
@@ -68,6 +68,7 @@ This is just a small project I did after my normal full time job, so there are s
 * Configuration of the matrix with a separate configuration entity
 * CI integration
 * Some UI enhancements
+* Write manual for the 8.x form integration
 
 ## Questions
 
