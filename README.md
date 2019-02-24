@@ -21,6 +21,7 @@ Based on Angular 7 / Webpack 4 / Angular Material / Angular CDK / Dynamics Webre
 * Angular CDK
 * Drag and Drop
 * Webpack 4.x
+* Rxjs
 * Integration with D365 Form oder D365 Web Api
 * Works in Classic UI and Unified Interface
 
@@ -68,13 +69,12 @@ This is just a small project I did after my normal full time job, so there are s
 * Unit testing
 * Configuration of the matrix with a separate configuration entity
 * CI integration
-* Some UI enhancements
+* Some UI enhancements / Design improvements
 * Write manual for the 8.x form integration
 * Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
 
-## Questions
+## Questions / Suggestions
 
 * Drop me an issue or an email: github [((at))] it-integrator.de
-...
 
 <a href="../master/legal.imprint.md">Impressum / Imprint</a>
