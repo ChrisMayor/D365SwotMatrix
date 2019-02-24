@@ -11,7 +11,7 @@ The swot matrix helps the sales people to identify the
 
 from the sight of your company, to make business with an account / or to win an opportunity.
 
-Based on Angular 7 / Webpack 4 / Dynamics Webresource
+Based on Angular 7 / Webpack 4 / Angular Material / Angular CDK / Dynamics Webresource
 
 ## Download managed Solution
 
