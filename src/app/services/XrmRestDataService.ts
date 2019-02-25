@@ -64,10 +64,12 @@ export class XrmRestDataService {
 
   private MapSwotItem(a:any) : swotItemCollection[]
   {
-    let stregthItems = this.convertToItems(a.mey_swot_strengths);
-    let weaknessesItems = this.convertToItems(a.mey_swot_weaknesses);
-    let opportunitiesItems = this.convertToItems(a.mey_swot_opportunities);
-    let threatsItems = this.convertToItems(a.mey_swot_threats);
+    console.log("map");
+    console.log(a);
+    let stregthItems = this.convertToItems(a.value[0].mey_swot_strengths);
+    let weaknessesItems = this.convertToItems(a.value[0].mey_swot_weaknesses);
+    let opportunitiesItems = this.convertToItems(a.value[0].mey_swot_opportunities);
+    let threatsItems = this.convertToItems(a.value[0].mey_swot_threats);
 
     let returnValue: swotItemCollection[] = [];
 

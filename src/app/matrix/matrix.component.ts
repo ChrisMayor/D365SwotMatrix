@@ -64,7 +64,7 @@ export class MatrixComponent implements OnInit {
 
     this.dynamicsService.readSwotFromDynamics()
       .subscribe(dynamicsData =>
-
+        {
 
 
         dynamicsData.forEach(i => {
@@ -83,7 +83,8 @@ export class MatrixComponent implements OnInit {
               break;
           }
 
-        }));
+        })
+      });
 
 
 
