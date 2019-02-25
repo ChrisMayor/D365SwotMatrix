@@ -1,8 +1,8 @@
-# Account SWOT Matrix for Dynamics 365 (8.2 or 9.x)
+# Account / Opportunity SWOT Matrix for Dynamics 365 (8.2 or 9.x)
 
-SWOT-Matrix Control for Dynamics 365 (8.2 or 9.x) which can be added as web ressource to the account or opportunity form.
+SWOT-Matrix Control for Dynamics 365 (8.2 or 9.x), which can be added as web ressource to the account or opportunity form.
 
-The swot matrix helps the sales people to identify the
+The SWOT matrix helps the sales people to identify the
 
 * Stenghts (internal)
 * Weaknesses (internal)
@@ -11,18 +11,17 @@ The swot matrix helps the sales people to identify the
 
 from the sight of your company, to make business with an account / or to win an opportunity.
 
-Based on Angular 7 / Webpack 4 / Dynamics Webresource
-
-## Screenshots
+Based on Angular 7 / Webpack 4 / Angular Material / Angular CDK / Dynamics Webresource
 
 ## Highlights
 
-* 2 ways to build the application (Angular or Webpack) -- ng build prefered
+* 2 ways to build the application (Angular or Webpack) -- Angular build prefered
 * Angular 7.x
 * Angular Material
 * Angular CDK
 * Drag and Drop
 * Webpack 4.x
+* Rxjs
 * Integration with D365 Form oder D365 Web Api
 * Works in Classic UI and Unified Interface
 
@@ -30,16 +29,38 @@ Based on Angular 7 / Webpack 4 / Dynamics Webresource
 
 Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource.
 
-Prove that the production build gets really super small (currently ~500kb), even with Angular and Angular Material
+Proves that the production build gets really super small (currently ~500kb), even with Angular and Angular Material
 This project was generated with Angular CLI version 7.2.0.
 
 ## Minimum requirements:
 
-* D365 8.2 / 9.x on premise for the Form-Integration
-* D365 9.0 for Web Api Integration
+* D365 9.x for Web Api Integration (onprem, online) (current release and managed solution) - not tested on 8.x but should also work there
+
+* Dynamics 365 8.2 / 9.x on premise or online for form integration (managed solution / manual currently not available - since not the preferred way)
+
+## Download Managed Solution
+
+### V1.0 Managed Solution for Account and Opportunity Form
+
+
+## Screenshots Unified Interface
+
+<p align="center">
+  <img src="../master/Screenshots/empty-unified.JPG" title="empty matrix / unified interface">
+    <img src="../master/Screenshots/filled-unified.JPG" title="filled matrix / unified interface">
+</p>
+
+## Screenshots Classic Interface
+
+<p align="center">
+  <img src="../master/Screenshots/filled-classic.JPG" title="filled matrix / classic interface">
+</p>
 
 ## Demo
 
+<p align="center">
+  <img src="../master/Screenshots/Demo.gif" title="Demo">
+</p>
 
 ## Some todos
 
@@ -48,5 +69,12 @@ This is just a small project I did after my normal full time job, so there are s
 * Unit testing
 * Configuration of the matrix with a separate configuration entity
 * CI integration
-...
+* Some UI enhancements / Design improvements
+* Write manual for the 8.x form integration
+* Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
 
+## Questions / Suggestions
+
+* Drop me an issue or an email: github [((at))] it-integrator.de
+
+<a href="../master/legal.imprint.md">Impressum / Imprint</a>
