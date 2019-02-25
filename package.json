@@ -31,7 +31,6 @@
     "@angular/compiler": "^7.2.4",
     "@angular/compiler-cli": "^7.2.4",
     "@angular/language-service": "^7.2.4",
-    "@fortawesome/fontawesome-free": "^5.7.2",
     "@ngtools/webpack": "^7.3.1",
     "@types/node": "~8.9.4",
     "@types/xrm": "^9.0.11",

@@ -1,3 +1,6 @@
+import { XrmRestDynamicsService } from "./../app/services/xrmRestDynamicsService"
+
 export const environment = {
-  production: true
+  production: true,
+  dynamicsServiceType: XrmRestDynamicsService
 };

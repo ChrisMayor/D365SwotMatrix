@@ -55,6 +55,7 @@ export class MatrixTileComponent implements OnInit {
                           event.previousIndex,
                           event.currentIndex);
       }
+      this.change.emit("new");
 }
 
 }

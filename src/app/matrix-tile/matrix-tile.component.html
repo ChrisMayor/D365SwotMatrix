@@ -9,22 +9,22 @@
   <div class="div-container2">
     <div *ngIf="itemList.length > 0" cdkDropList #chanceList="cdkDropList" [cdkDropListData]="itemList" class="matrix-list"
       (cdkDropListDropped)="drop($event)">
-      <div class="matrix-box" *ngFor="let item of itemList" cdkDrag>
+      <div class="matrix-box" *ngFor="let item of itemList" cdkDrag [cdkDragDisabled]="item.isEditing">
         <div *ngIf="!item.isEditing" class="buttontext">
           <div class="text">{{item.text}}</div>
-          <div class="buttons" (click)="remove(item, itemList)"><i class="fas fa-trash"></i></div>
-          <div class="buttons" (click)="edit(item, itemList)"><i class="fas fa-edit"></i></div>
+          <div class="buttons" (click)="remove(item, itemList)"><i class="material-icons">delete</i></div>
+          <div class="buttons" (click)="edit(item, itemList)"><i class="material-icons">edit</i></div>
         </div>
         <div *ngIf="item.isEditing" class="buttontext">
           <input type="text" class="form-control text" [(ngModel)]="item.text" name="text">
-          <div class="buttons" (click)="unedit(item, itemList)"><i class="fas fa-check"></i></div>
+          <div class="buttons" (click)="unedit(item, itemList)"><i class="material-icons">check</i></div>
         </div>
 
       </div>
     </div>
     <div *ngIf="itemList.length == 0" cdkDropList #weaknessList="cdkDropList" [cdkDropListData]="itemList" class="matrix-list"
       (cdkDropListDropped)="drop($event)">
-      <div class="emptyText">empty</div>
+      <div class="emptyText">empty - drop below</div>
     </div>
   </div>
 
