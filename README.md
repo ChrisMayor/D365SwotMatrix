@@ -41,9 +41,12 @@ This project was generated with Angular CLI version 7.2.0.
 
 * Dynamics 365 8.2 / 9.x on premise or online for form integration (managed solution / manual currently not available - since not the preferred way)
 
-## Download Managed Solution
+## Releases for download as managed solution
 
 ### V1.0 Managed Solution for Account and Opportunity Form
+
+
+<a href="../master/install.md">Installation guide</a>
 
 
 ## Screenshots Unified Interface
@@ -79,5 +82,9 @@ This is just a small project I did after my normal full time job, so there are s
 ## Questions / Suggestions
 
 * Drop me an issue or an email: github [((at))] it-integrator.de
+
+## Imprint / Disclaimer
+
+* Use your own risk
 
 <a href="../master/legal.imprint.md">Impressum / Imprint</a>
