@@ -20,19 +20,19 @@ export class XrmRestDataService {
 
   constructor(private http: HttpClient) { }
 
-  public GetDynamicsApiUrl(): string {
+  public getDynamicsApiUrl(): string {
     let url = window.parent.Xrm.Page.context.getClientUrl();
     let apiversion = window.parent.Xrm.Page.context.getVersion().substring(0,3);
     return `${url}/api/data/v${apiversion}`
   }
 
-  public GetCurrentEntityName(): string {
+  public getCurrentEntityName(): string {
     return this.getParamValueQueryString("typename");
   }
 
-  public GetEntitySetName() : Observable<string>
+  public getEntitySetName() : Observable<string>
   {
-      let apiURL = `${this.GetDynamicsApiUrl()}/EntityDefinitions(LogicalName='${this.GetCurrentEntityName()}')?$select=EntitySetName`;
+      let apiURL = `${this.getDynamicsApiUrl()}/EntityDefinitions(LogicalName='${this.getCurrentEntityName()}')?$select=EntitySetName`;
       let subscription =  this.http.get(apiURL).pipe<Object, string>(
         map<object, any> (result => result as any),
         map<any,string>(a => { return a.EntitySetName }
@@ -40,13 +40,13 @@ export class XrmRestDataService {
       return subscription;
   }
 
-  public GetSwotMatrix(entitySetName : string, entityname:string, id:string) : Observable<swotItemCollection[]>
+  public getSwotMatrix(entitySetName : string, entityname:string, id:string) : Observable<swotItemCollection[]>
   {
-      let apiURL = `${this.GetDynamicsApiUrl()}/${entitySetName}?$select=mey_swot_strengths,mey_swot_weaknesses,mey_swot_opportunities,mey_swot_threats&$filter=${entityname}id%20eq%20%27${id}%27`;
+      let apiURL = `${this.getDynamicsApiUrl()}/${entitySetName}?$select=mey_swot_strengths,mey_swot_weaknesses,mey_swot_opportunities,mey_swot_threats&$filter=${entityname}id%20eq%20%27${id}%27`;
       let subscription =  this.http.get(apiURL).pipe<Object, swotItemCollection[]>(
         map<object, any> (result => result as any),
         map<any,swotItemCollection[]>(a => { 
-          return this.MapSwotItem(a);
+          return this.mapSwotItem(a);
         }
       ));
       return subscription;
@@ -62,10 +62,8 @@ export class XrmRestDataService {
     return returnValue;
   }
 
-  private MapSwotItem(a:any) : swotItemCollection[]
+  private mapSwotItem(a:any) : swotItemCollection[]
   {
-    console.log("map");
-    console.log(a);
     let stregthItems = this.convertToItems(a.value[0].mey_swot_strengths);
     let weaknessesItems = this.convertToItems(a.value[0].mey_swot_weaknesses);
     let opportunitiesItems = this.convertToItems(a.value[0].mey_swot_opportunities);
@@ -92,7 +90,7 @@ export class XrmRestDataService {
       return returnValue;
   }
 
-  public SetSwotMatrix(entitySetName : string, entityname:string, id:string, sowtItems : swotItemCollection[]) : Observable<object>
+  public setSwotMatrix(entitySetName : string, entityname:string, id:string, sowtItems : swotItemCollection[]) : Observable<object>
   {
     let strengths: string[] = [];
       let weaknesses: string[] = [];
@@ -117,7 +115,7 @@ export class XrmRestDataService {
         }
       });
 
-      let apiURL = `${this.GetDynamicsApiUrl()}/${entitySetName}(${id.replace("{","").replace("}","")})`;
+      let apiURL = `${this.getDynamicsApiUrl()}/${entitySetName}(${id.replace("{","").replace("}","")})`;
       
       let body = {  
         "mey_swot_strengths": strengths.join(";;"),  
@@ -132,7 +130,7 @@ export class XrmRestDataService {
     
   }
 
-  public GetCurrentEntityId(): string {
+  public getCurrentEntityId(): string {
     return this.getParamValueQueryString("id");
   }
 

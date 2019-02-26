@@ -16,21 +16,6 @@ export class LoggerDynamicsService implements DynamicsService {
 
   constructor() { }
 
-  private convertToText(item: swotItem): string {
-    let returnValue: string = "";
-    returnValue = returnValue + item.text + "\r\n";
-    return returnValue;
-  }
-
-  private convertToItems(text: string): swotItem[] {
-    let returnValue: swotItem[] = [];
-    if (text != null) {
-      let itemsArray: string[] = text.split(";;");
-      itemsArray.forEach(x => returnValue.push({ text: x, isEditing: false }));
-    }
-    return returnValue;
-  }
-
   public writeSwotToDynamics(sowtItems: swotItemCollection[]): void {
     this.sowtItems = sowtItems  
     let strengths: string[] = [];

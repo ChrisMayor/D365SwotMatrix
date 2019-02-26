@@ -25,26 +25,26 @@ export class XrmRestDynamicsService implements DynamicsService {
 
 
   public writeSwotToDynamics(sowtItems: swotItemCollection[]): void {
-    let map1$ = this.xrmRestSvc.GetEntitySetName();
-    let currentEntityId = this.xrmRestSvc.GetCurrentEntityId();
-    let currentEntityName = this.xrmRestSvc.GetCurrentEntityName();
+    let map1$ = this.xrmRestSvc.getEntitySetName();
+    let currentEntityId = this.xrmRestSvc.getCurrentEntityId();
+    let currentEntityName = this.xrmRestSvc.getCurrentEntityName();
     map1$.pipe(
-      flatMap((entityset) => this.xrmRestSvc.SetSwotMatrix(entityset, currentEntityName, currentEntityId, sowtItems))
+      flatMap((entityset) => this.xrmRestSvc.setSwotMatrix(entityset, currentEntityName, currentEntityId, sowtItems))
     ).subscribe();
   }
 
   public readSwotFromDynamics(): Observable<swotItemCollection[]> {
-    let map1$ = this.xrmRestSvc.GetEntitySetName();
-    let currentEntityId = this.xrmRestSvc.GetCurrentEntityId();
-    let currentEntityName = this.xrmRestSvc.GetCurrentEntityName();
+    let map1$ = this.xrmRestSvc.getEntitySetName();
+    let currentEntityId = this.xrmRestSvc.getCurrentEntityId();
+    let currentEntityName = this.xrmRestSvc.getCurrentEntityName();
     let map2$ =  map1$.pipe(
-      flatMap((entityset) => this.xrmRestSvc.GetSwotMatrix(entityset, currentEntityName, currentEntityId))
+      flatMap((entityset) => this.xrmRestSvc.getSwotMatrix(entityset, currentEntityName, currentEntityId))
     );
     return map2$;
   }
 
   public isFormInCreate() : Observable<boolean>
   {
-    return of(this.xrmRestSvc.GetCurrentEntityId() != "");
+    return of(this.xrmRestSvc.getCurrentEntityId() == "");
   }
 }

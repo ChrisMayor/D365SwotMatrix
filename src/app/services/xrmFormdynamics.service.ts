@@ -17,12 +17,6 @@ export class XrmFormDynamicsService implements DynamicsService {
 
   constructor() { }
 
-  private convertToText(item: swotItem): string {
-    let returnValue: string = "";
-    returnValue = returnValue + item.text + "\r\n";
-    return returnValue;
-  }
-
 
 
   public writeSwotToDynamics(sowtItems: swotItemCollection[]): void {

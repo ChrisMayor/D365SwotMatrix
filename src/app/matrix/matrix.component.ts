@@ -60,7 +60,7 @@ export class MatrixComponent implements OnInit {
 
   ngOnInit() {
 
-    this.dynamicsService.isFormInCreate().subscribe((notinCreate) => this.InCreate = !notinCreate);
+    this.dynamicsService.isFormInCreate().subscribe((inCreate) => this.InCreate = inCreate);
 
     this.dynamicsService.readSwotFromDynamics()
       .subscribe(dynamicsData =>
