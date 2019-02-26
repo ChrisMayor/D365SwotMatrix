@@ -1,17 +1,26 @@
-# Account / Opportunity SWOT Matrix for Dynamics 365 (8.2 or 9.x)
+# SWOT Matrix Control for Dynamics 365 (8.2 or 9.x)
 
-SWOT-Matrix Control for Dynamics 365 (8.2 or 9.x), which can be added as web ressource to the account or opportunity form.
+## Description
 
-The SWOT matrix helps the sales people to identify the
+The SWOT Matrix Control for Dynamics 365 (8.2 or 9.x), can be added as web ressource to the account or opportunity form.
+
+The SWOT matrix helps the sales people / the organisation to identify the
 
 * Stenghts (internal)
 * Weaknesses (internal)
 * Opportunities (external)
 * Threads (external)
 
-from the sight of your company, to make business with an account / or to win an opportunity.
+related to business competition to win an opportunity or customer.
 
-Based on Angular 7 / Webpack 4 / Angular Material / Angular CDK / Dynamics Webresource
+For usage see https://en.wikipedia.org/wiki/SWOT_analysis
+
+This control ist based on Angular 7, Webpack 4, Angular Material, Angular CDK and Rxjs and communicated with the Dynamics WebApi.
+
+Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource and usage of the Dynamics 365 WebApi.
+
+Proves that the production build gets super small (currently around ~500kb), even with Angular and Angular Material
+This project was generated with Angular CLI version 7.2.0.
 
 ## Highlights
 
@@ -21,20 +30,14 @@ Based on Angular 7 / Webpack 4 / Angular Material / Angular CDK / Dynamics Webre
 * Angular CDK
 * Drag and Drop
 * Webpack 4.x
-* Rxjs
+* Rxjs for WebApi communication
 * Integration with D365 Form oder D365 Web Api
 * Works in Classic UI and Unified Interface
-
-## Description
-
-Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource.
-
-Proves that the production build gets really super small (currently ~500kb), even with Angular and Angular Material
-This project was generated with Angular CLI version 7.2.0.
+* Scales to different screen resolutions
 
 ## Minimum requirements:
 
-* D365 9.x for Web Api Integration (onprem, online) (current release and managed solution) - not tested on 8.x but should also work there
+* Tested on Dynamics 365 9.x for Web Api Integration (on premise, online) (current release and managed solution) - not tested on 8.x but should also work there
 
 * Dynamics 365 8.2 / 9.x on premise or online for form integration (managed solution / manual currently not available - since not the preferred way)
 
@@ -62,7 +65,7 @@ This project was generated with Angular CLI version 7.2.0.
   <img src="../master/Screenshots/Demo.gif" title="Demo">
 </p>
 
-## Some todos
+## Todos
 
 This is just a small project I did after my normal full time job, so there are still some open points:
 
