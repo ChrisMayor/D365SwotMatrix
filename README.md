@@ -2,7 +2,7 @@
 
 ## Description
 
-The SWOT Matrix Control for Dynamics 365 (8.2 or 9.x), can be added as web ressource to the account or opportunity form.
+The SWOT Matrix Control for Dynamics 365 (8.2 or 9.x), can be added as a web resource to the account or opportunity form.
 
 The SWOT matrix helps the sales people / the organisation to identify the
 
@@ -15,7 +15,7 @@ related to business competition to win an opportunity or customer.
 
 For usage see https://en.wikipedia.org/wiki/SWOT_analysis
 
-This control ist based on Angular 7, Webpack 4, Angular Material, Angular CDK and Rxjs and communicated with the Dynamics WebApi.
+This control ist based on Angular 7, Webpack 4, Angular Material, Angular CDK and Rxjs and communicates with the Dynamics Web Api.
 
 Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource and usage of the Dynamics 365 WebApi.
 
@@ -24,20 +24,19 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Highlights
 
-* 2 ways to build the application (Angular or Webpack) -- Angular build prefered
 * Angular 7.x
 * Angular Material
 * Angular CDK
 * Drag and Drop
 * Webpack 4.x
 * Rxjs for WebApi communication
-* Integration with D365 Form oder D365 Web Api
 * Works in Classic UI and Unified Interface
+* Works in Dynamics 9.x
 * Scales to different screen resolutions
 
 ## Minimum requirements:
 
-* Tested on Dynamics 365 9.x for Web Api Integration (on premise, online) (current release and managed solution) - not tested on 8.x but should also work there
+* Tested on Dynamics 365 with Web Api Integration (online) (current release and managed solution) - not tested on 8.x and 9.x onpremise but should also work there.
 
 ## Releases for download as managed solution
 
@@ -68,7 +67,7 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Todos
 
-This is just a small project I did after my normal full time job, so there are still some open points:
+This is just a small project I'm working on after my normal full time job, so there are still some open points:
 
 * Unit testing
 * Configuration of the matrix with a separate configuration entity
