@@ -1,10 +1,10 @@
-# SWOT Matrix Control (drag and drop) for Dynamics 365 (9.x or 8.2)
+# SWOT Analysis Control (drag and drop) for Dynamics 365 (9.x or 8.2)
 
 ## Description
 
-The SWOT Matrix Control for Dynamics 365 (8.2 or 9.x), can be added as a web resource to the account, opportunity or your custom entity form.
+The SWOT Analysis Control for Dynamics 365 (8.2 or 9.x), can be added as a web resource to the account, opportunity or your custom entity form.
 
-The SWOT matrix helps the sales people / the organisation to identify the
+The SWOT Analysis helps the sales people / the organisation to identify the
 
 * Stenghts (internal)
 * Weaknesses (internal)
