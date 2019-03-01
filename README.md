@@ -37,7 +37,7 @@ This project was generated with Angular CLI version 7.2.0.
 ## Minimum requirements:
 
 * Tested on Dynamics 365 with Web Api Integration (online v9.0/v9.1) - not tested on 8.x but should also work there.
-* Works on classic ui and unified interface - suggested usage is on unified interface ui, caused by the limited space on the classic ui form
+* Works on classic ui and unified interface - suggested usage is on unified interface ui, caused by the limited space on the classic ui form and that you may have to care about the refresh of the web resource after creating the record
 
 ## Releases for download as managed solution
 
