@@ -41,7 +41,7 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Releases for download as managed solution
 
-### V1.0 Managed Solution for Account and Opportunity Form
+### V1.0 Solutions for Account and Opportunity Form
 
 <a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0.zip">SWOTMatrix for account form (unmanaged)</a><br/>
 <a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0_managed.zip">SWOTMatrix for account form (managed)</a><br/>
@@ -50,7 +50,7 @@ This project was generated with Angular CLI version 7.2.0.
 
 <a href="../master/managedSolutions/quickinstall_guide.pdf">Installation guide</a>
 
-You may use the unmanaged solution to add the swot matrix to your custom entity. In this case you need the following fields on the form:
+You may use the unmanaged solution to add the swot matrix to your custom entity. In this case you need the following fields on the custom entity:
 
 * mey_swot_strengths (Multiline text 2000)
 * mey_swot_weaknesses (Multiline text 2000)
