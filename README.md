@@ -46,6 +46,12 @@ This project was generated with Angular CLI version 7.2.0.
 
 <a href="../master/managedSolutions/quickinstall_guide.pdf">Installation guide</a>
 
+You may use the unmanaged solution to add the swot matrix to your custom entity. In this case you need the following fields on the form:
+
+* mey_swot_strengths (Multiline text 2000)
+* mey_swot_weaknesses (Multiline text 2000)
+* mey_swot_opportunities (Multiline text 2000)
+* mey_swot_threats (Multiline text 2000)
 
 ## Screenshots Unified Interface
 
