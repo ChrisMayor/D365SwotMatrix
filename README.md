@@ -87,7 +87,7 @@ This is just a small project I'm working on after my normal full time job, so th
 * Write manual for the 8.x form integration
 * Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
 
-## Drawbacks on classic ui
+## Drawbacks on the classic ui
 
 * On the classic UI you my have to refresh the web resource after create event:
 
