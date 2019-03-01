@@ -1,4 +1,4 @@
-# SWOT Matrix Control for Dynamics 365 (9.x or 8.2)
+# SWOT Matrix Control (drag and drop) for Dynamics 365 (9.x or 8.2)
 
 ## Description
 
