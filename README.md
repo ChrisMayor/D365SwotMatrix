@@ -44,7 +44,7 @@ This project was generated with Angular CLI version 7.2.0.
 ### V1.0 Managed Solution for Account and Opportunity Form
 
 
-<a href="../master/install.md">Installation guide</a>
+<a href="../master/managedSolutions/quickinstall_guide.pdf">Installation guide</a>
 
 
 ## Screenshots Unified Interface
