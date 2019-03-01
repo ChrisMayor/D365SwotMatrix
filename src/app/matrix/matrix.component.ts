@@ -62,6 +62,8 @@ export class MatrixComponent implements OnInit {
 
     this.dynamicsService.isFormInCreate().subscribe((inCreate) => this.InCreate = inCreate);
 
+    if (!this.InCreate)
+    {
     this.dynamicsService.readSwotFromDynamics()
       .subscribe(dynamicsData =>
         {
@@ -86,7 +88,7 @@ export class MatrixComponent implements OnInit {
         })
       });
 
-
+    }
 
 
 

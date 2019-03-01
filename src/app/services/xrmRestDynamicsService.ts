@@ -45,6 +45,6 @@ export class XrmRestDynamicsService implements DynamicsService {
 
   public isFormInCreate() : Observable<boolean>
   {
-    return of(this.xrmRestSvc.getCurrentEntityId() == "");
+    return of(this.xrmRestSvc.getCurrentEntityId() == null || this.xrmRestSvc.getCurrentEntityId() == "");
   }
 }
