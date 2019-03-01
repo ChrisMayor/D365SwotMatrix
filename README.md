@@ -102,8 +102,6 @@ webResourceControl.setSrc(src);
 
 In the unified interface Dynamics refreshes the web resource automatically after the record is created.
 
-## Imprint / Disclaimer
+## Disclaimer
 
 * Use your own risk
-
-<a href="../master/legal.imprint.md">Impressum / Imprint</a>
