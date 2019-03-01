@@ -1,10 +1,10 @@
-# SWOT Matrix Control for Dynamics 365 (9.x or 8.2)
+# SWOT Analysis Control (drag and drop) for Dynamics 365 (9.x or 8.2)
 
 ## Description
 
-The SWOT Matrix Control for Dynamics 365 (8.2 or 9.x), can be added as a web resource to the account, opportunity or your custom entity form.
+The SWOT Analysis Control for Dynamics 365 (8.2 or 9.x), can be added as a web resource to the account, opportunity or your custom entity form.
 
-The SWOT matrix helps the sales people / the organisation to identify the
+The SWOT Analysis helps the sales people / the organisation to identify the
 
 * Stenghts (internal)
 * Weaknesses (internal)
@@ -41,11 +41,21 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Releases for download as managed solution
 
-### V1.0 Managed Solution for Account and Opportunity Form
+### V1.0 Solutions for Account and Opportunity Form
 
+<a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0.zip">SWOTMatrix for account form (unmanaged)</a><br/>
+<a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0_managed.zip">SWOTMatrix for account form (managed)</a><br/>
+<a href="../master/managedSolutions/SWOTMatrixforOpportunity_1_0_0_0.zip">SWOTMatrix for opportunity form (unmanaged)</a><br/>
+<a href="../master/managedSolutions/SWOTMatrixforOpportunity_1_0_0_0_managed.zip">SWOTMatrix for opportunity form (managed)</a><br/>
 
 <a href="../master/managedSolutions/quickinstall_guide.pdf">Installation guide</a>
 
+You may use the unmanaged solution to add the swot matrix to your custom entity. In this case you need the following fields on the custom entity:
+
+* mey_swot_strengths (Multiline text 2000)
+* mey_swot_weaknesses (Multiline text 2000)
+* mey_swot_opportunities (Multiline text 2000)
+* mey_swot_threats (Multiline text 2000)
 
 ## Screenshots Unified Interface
 
@@ -74,10 +84,9 @@ This is just a small project I'm working on after my normal full time job, so th
 * Configuration of the matrix with a separate configuration entity
 * CI integration
 * Some UI enhancements / Design improvements
-* Write manual for the 8.x form integration
 * Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
 
-## Drawbacks on classic ui
+## Drawbacks on the classic ui
 
 * On the classic UI you my have to refresh the web resource after create event:
 
