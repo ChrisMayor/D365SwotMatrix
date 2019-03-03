@@ -4,6 +4,14 @@ body {
     font-family: 'Montserrat';
   }
 
+@media screen and (min-width : 1224px)  {  
 .rootdiv {
   max-width:1200px;
+}
+}
+
+@media screen and (max-width: 1223px) {
+  .rootdiv {
+  max-width:1000px;
+}
 }
