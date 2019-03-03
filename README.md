@@ -19,7 +19,8 @@ This control is based on Angular 7, Webpack 4, Angular Material, Angular CDK and
 
 Realizes the Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource and usage of the Dynamics 365 WebApi with Rxjs.
 
-Proves that the production build gets super small (currently around ~500kb), even with Angular and Angular Material
+Proves that the production build gets super small (currently around ~500kb), even with Angular and Angular Material.
+
 This project was generated with Angular CLI version 7.2.0.
 
 ## Highlights
@@ -38,7 +39,7 @@ This project was generated with Angular CLI version 7.2.0.
 ## Minimum requirements:
 
 * Tested on Dynamics 365 with Web Api Integration (online v9.0/v9.1) - not tested on 8.x but should also work there.
-* Works on classic ui and unified interface - suggested usage is on unified interface ui, caused by the limited space on the classic ui form and that you may have to care about the refresh of the web resource after creating the record (see hint how to solve below)
+* Works on classic ui and unified interface - suggested usage is on unified interface ui, caused by the limited space on the classic ui form and that you may have to care about the refresh of the web resource after creating the record (see hint below how to do this)
 
 ## Releases for download as managed solution
 
