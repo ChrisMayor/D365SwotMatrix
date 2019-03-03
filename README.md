@@ -33,24 +33,25 @@ This project was generated with Angular CLI version 7.2.0.
 * Works in Classic UI and Unified Interface
 * Works in Dynamics 9.x
 * Scales to different screen resolutions
+* Only ~500kb production build size
 
 ## Minimum requirements:
 
 * Tested on Dynamics 365 with Web Api Integration (online v9.0/v9.1) - not tested on 8.x but should also work there.
-* Works on classic ui and unified interface - suggested usage is on unified interface ui, caused by the limited space on the classic ui form and that you may have to care about the refresh of the web resource after creating the record
+* Works on classic ui and unified interface - suggested usage is on unified interface ui, caused by the limited space on the classic ui form and that you may have to care about the refresh of the web resource after creating the record (see hint how to solve below)
 
 ## Releases for download as managed solution
 
 ### V1.0 Solutions for Account and Opportunity Form
 
-<a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0.zip">SWOTMatrix for account form (unmanaged)</a><br/>
-<a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0_managed.zip">SWOTMatrix for account form (managed)</a><br/>
-<a href="../master/managedSolutions/SWOTMatrixforOpportunity_1_0_0_0.zip">SWOTMatrix for opportunity form (unmanaged)</a><br/>
-<a href="../master/managedSolutions/SWOTMatrixforOpportunity_1_0_0_0_managed.zip">SWOTMatrix for opportunity form (managed)</a><br/>
+<a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0.zip">SWOT Analysis for account form (unmanaged)</a><br/>
+<a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0_managed.zip">SWOT Analysis for account form (managed)</a><br/>
+<a href="../master/managedSolutions/SWOTMatrixforOpportunity_1_0_0_0.zip">SWOT Analysis for opportunity form (unmanaged)</a><br/>
+<a href="../master/managedSolutions/SWOTMatrixforOpportunity_1_0_0_0_managed.zip">SWOT Analysis for opportunity form (managed)</a><br/>
 
 <a href="../master/managedSolutions/quickinstall_guide.pdf">Installation guide</a>
 
-You may use the unmanaged solution to add the swot matrix to your custom entity. In this case you need the following fields on the custom entity:
+You may use the unmanaged solution to add the SWOT Analysis to your custom entity form. In this case you need the following fields on the custom entity:
 
 * mey_swot_strengths (Multiline text 2000)
 * mey_swot_weaknesses (Multiline text 2000)
@@ -76,7 +77,7 @@ You may use the unmanaged solution to add the swot matrix to your custom entity.
   <img src="../master/Screenshots/Demo.gif" title="Demo">
 </p>
 
-## Todos
+## To do's
 
 This is just a small project I'm working on after my normal full time job, so there are still some open points:
 
@@ -86,7 +87,7 @@ This is just a small project I'm working on after my normal full time job, so th
 * Some UI enhancements / Design improvements
 * Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
 
-## Drawbacks on the classic ui
+## Missing post create refresh of the web resource on the classic ui
 
 * On the classic UI you my have to refresh the web resource after create event:
 
