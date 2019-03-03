@@ -30,7 +30,7 @@ This project was generated with Angular CLI version 7.2.0.
 * Angular CDK
 * Drag and Drop
 * Webpack 4.x
-* Rxjs for WebApi communication
+* Usage of Rxjs for WebApi communication
 * Works in Classic UI and Unified Interface
 * Works in Dynamics 9.x
 * Scales to different screen resolutions
