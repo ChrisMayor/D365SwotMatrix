@@ -1,16 +1,16 @@
 <div *ngIf="!InCreate" class="matrix-container" cdkDropListGroup>
   <mat-grid-list cols="2" rowHeight="2:1">
     <mat-grid-tile class="tile-strength">
-      <app-matrix-tile class="div-hauptcontainer" name="Strengths" id="strength" [itemList]="strengthArray" (change)="persist($event)"></app-matrix-tile>
+      <app-matrix-tile class="div-maincontainer" name="Strengths" id="strength" [itemList]="strengthArray" (change)="persist($event)"></app-matrix-tile>
     </mat-grid-tile>
     <mat-grid-tile class="tile-weakness">
-      <app-matrix-tile class="div-hauptcontainer" name="Weaknesses" id="weakness" [itemList]="weaknessArray" (change)="persist($event)"></app-matrix-tile>
+      <app-matrix-tile class="div-maincontainer" name="Weaknesses" id="weakness" [itemList]="weaknessArray" (change)="persist($event)"></app-matrix-tile>
     </mat-grid-tile>
     <mat-grid-tile class="tile-opp">
-      <app-matrix-tile class="div-hauptcontainer" name="Opportunities" id="opportunity" [itemList]="opportunityArray" (change)="persist($event)"></app-matrix-tile>
+      <app-matrix-tile class="div-maincontainer" name="Opportunities" id="opportunity" [itemList]="opportunityArray" (change)="persist($event)"></app-matrix-tile>
     </mat-grid-tile>
     <mat-grid-tile class="tile-threat">
-      <app-matrix-tile class="div-hauptcontainer" name="Threats" id="threat" [itemList]="treathArray" (change)="persist($event)"></app-matrix-tile>
+      <app-matrix-tile class="div-maincontainer" name="Threats" id="threat" [itemList]="treathArray" (change)="persist($event)"></app-matrix-tile>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
