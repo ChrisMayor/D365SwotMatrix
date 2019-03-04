@@ -37,6 +37,10 @@ This project was generated with Angular CLI version 7.2.0.
 * Non-Production build runs locally without Dynamics Integration - a console logger is injected as service instead
 * Only ~500kb production build size
 
+## Web demo
+
+<a href ="https://chrismayor.github.io/D365SwotMatrixDemo/index.html">Demo</a>
+
 ## Minimum requirements:
 
 * Tested on Dynamics 365 with Web Api Integration (online v9.0/v9.1) - not tested on 8.x but should also work there.
