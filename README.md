@@ -34,6 +34,7 @@ This project was generated with Angular CLI version 7.2.0.
 * Works in Classic UI and Unified Interface
 * Works in Dynamics 9.x
 * Scales to different screen resolutions
+* Non-Production build runs locally without Dynamics Integration - a console logger is injected as service instead
 * Only ~500kb production build size
 
 ## Minimum requirements:
@@ -80,7 +81,7 @@ You may use the unmanaged solution to add the SWOT Analysis to your custom entit
 
 ## To do's
 
-This is just a small project I'm working on after my normal full time job, so there are still some open points:
+Some open points for future versions:
 
 * Unit testing
 * Configuration of the matrix with a separate configuration entity
