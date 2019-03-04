@@ -111,7 +111,7 @@ In the unified interface Dynamics refreshes the web resource automatically after
 
 ## Disclaimer / Impressum
 
-* Published under the MIT licencse
+* Published under the MIT license
 * Use your own risk
 
 <a href="https://github.com/ChrisMayor/Impressum">Impressum / Imprint in German language to comply with German tele-media regulations.</a>
