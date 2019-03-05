@@ -48,7 +48,7 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Releases for download as managed solution
 
-### V1.0 Solutions for Account and Opportunity Form
+### V1.0 Solutions for Account and Opportunity Form (Dynamics 9.x)
 
 <a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0.zip">SWOT Analysis for account form (unmanaged)</a><br/>
 <a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0_managed.zip">SWOT Analysis for account form (managed)</a><br/>
