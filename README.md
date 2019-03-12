@@ -92,6 +92,7 @@ Some open points for future versions:
 * CI integration
 * Some UI enhancements / Design improvements
 * Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
+* Get the labels from Dynamics Metadata Service to allow translations
 
 ## Missing post create refresh of the web resource on the classic ui
 
