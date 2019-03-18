@@ -37,6 +37,10 @@ This project was generated with Angular CLI version 7.2.0.
 * Non-Production build runs locally without Dynamics Integration - a console logger is injected as service instead
 * Only ~500kb production build size
 
+## Web demo
+
+<a href ="https://chrismayor.github.io/D365SwotMatrixDemo/index.html">Demo</a>
+
 ## Minimum requirements:
 
 * Tested on Dynamics 365 with Web Api Integration (online v9.0/v9.1) - not tested on 8.x but should also work there.
@@ -44,7 +48,7 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Releases for download as managed solution
 
-### V1.0 Solutions for Account and Opportunity Form
+### V1.0 Solutions for Account and Opportunity Form (Dynamics 9.x)
 
 <a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0.zip">SWOT Analysis for account form (unmanaged)</a><br/>
 <a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0_managed.zip">SWOT Analysis for account form (managed)</a><br/>
@@ -88,6 +92,7 @@ Some open points for future versions:
 * CI integration
 * Some UI enhancements / Design improvements
 * Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
+* Get the labels from Dynamics Metadata Service to allow translations
 
 ## Missing post create refresh of the web resource on the classic ui
 
@@ -105,6 +110,9 @@ webResourceControl.setSrc(src);
 
 In the unified interface Dynamics refreshes the web resource automatically after the record is created.
 
-## Disclaimer
+## Disclaimer / Impressum
 
-* Use your own risk
+* Published under the MIT license
+* Use at your own risk
+
+<a href="https://github.com/ChrisMayor/Impressum">Impressum / Imprint in German language to comply with German tele-media regulations.</a>
