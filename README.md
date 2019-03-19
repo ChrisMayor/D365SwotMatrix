@@ -93,6 +93,7 @@ Some open points for future versions:
 * Some UI enhancements / Design improvements
 * Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
 * Get the labels from Dynamics Metadata Service to allow translations
+* Wrap the Angular App in a Power App Custom Control (PCF) - Render the html and integrate the contents
 
 ## Missing post create refresh of the web resource on the classic ui
 
