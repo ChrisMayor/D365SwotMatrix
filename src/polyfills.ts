@@ -44,7 +44,7 @@
 // import 'core-js/es6/reflect';
 
 /** Only required when running in JIT mode */
-import 'core-js/es7/reflect';
+import 'core-js/proposals/reflect-metadata';
 
 /**
  * Web Animations `@angular/platform-browser/animations`
