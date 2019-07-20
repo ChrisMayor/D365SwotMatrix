@@ -41,6 +41,8 @@ This project was generated with Angular CLI version 7.2.0.
 
 <a href ="https://chrismayor.github.io/D365SwotMatrixDemo/index.html">Demo</a>
 
+Note: Web demo is still on Angular 7 - Update to current version in work
+
 ## Minimum requirements:
 
 * Tested on Dynamics 365 with Web Api Integration (online v9.0/v9.1) - not tested on 8.x but should also work there.
@@ -63,6 +65,8 @@ You may use the unmanaged solution to add the SWOT Analysis to your custom entit
 * mey_swot_weaknesses (Multiline text 2000)
 * mey_swot_opportunities (Multiline text 2000)
 * mey_swot_threats (Multiline text 2000)
+
+Note: Solutions are still on Angular 7 - Update to current version in work
 
 ## Screenshots Unified Interface
 
