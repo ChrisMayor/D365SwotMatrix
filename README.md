@@ -25,7 +25,7 @@ This project was generated with Angular CLI version 7.2.0.
 
 ## Highlights
 
-* Angular 7.x
+* Angular 8.x
 * Angular Material
 * Angular CDK
 * Drag and Drop
