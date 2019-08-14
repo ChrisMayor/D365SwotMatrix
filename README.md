@@ -88,13 +88,19 @@ Note: Solutions are still on Angular 7 - Update to current version in work
   <img src="../master/Screenshots/Demo.gif" title="Demo">
 </p>
 
+## Build / start locally
+
+To build / start locally
+
+* Run: ng serve -o
+* Build: ng build
+
 ## To do's
 
 Some open points for future versions:
 
 * Unit testing
 * Configuration of the matrix with a separate configuration entity
-* CI integration
 * Some UI enhancements / Design improvements
 * Icons are currently integrated via Googles CDN - maybe needs to be replaced if this is not suiteable for your implementation
 * Get the labels from Dynamics Metadata Service to allow translations
