@@ -93,7 +93,7 @@ Note: Solutions are still on Angular 7 - Update to current version in work
 To build / start locally
 
 * Run: ng serve -o
-* Build: ng build
+* Build: ng build --configuration=production
 
 ## To do's
 
