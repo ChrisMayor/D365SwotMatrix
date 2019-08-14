@@ -1,3 +1,4 @@
+<img src="https://dev.azure.com/ich0166/D365SwotMatrix/_apis/build/status/ChrisMayor.D365SwotMatrix?branchName=master"></img>
 # SWOT Analysis Control (drag and drop) for Dynamics 365 (9.x or 8.2)
 
 ## Description
