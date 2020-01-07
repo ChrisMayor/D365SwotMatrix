@@ -16,13 +16,13 @@ related to business competition to win an opportunity or customer.
 
 For general usage see https://en.wikipedia.org/wiki/SWOT_analysis
 
-This control is based on Angular 7, Webpack 4, Angular Material, Angular CDK and Rxjs and communicates with the Dynamics Web Api.
+This control is based on Angular 8, Webpack 4, Angular Material, Angular CDK and Rxjs and communicates with the Dynamics Web Api.
 
 Realizes the Idea to include an custom Angular 7 Control in Dynamics 365 as Webresource and usage of the Dynamics 365 WebApi with Rxjs.
 
 Proves that the production build gets super small (currently around ~500kb), even with Angular and Angular Material.
 
-This project was generated with Angular CLI version 7.2.0.
+See also my Angular Elements version of this control for your custom web applications (https://github.com/ChrisMayor/AngularSwotMatrixControl)
 
 ## Highlights
 
