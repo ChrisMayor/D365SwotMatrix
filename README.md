@@ -51,7 +51,7 @@ Note: Web demo is still on Angular 7 - Update to current version in work
 
 ## Releases for download as managed solution
 
-### V1.0 Solutions for Account and Opportunity Form (Dynamics 9.x)
+### V1.0 Solutions for Account and Opportunity Form (Dynamics 9.x) - Cloud
 
 <a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0.zip">SWOT Analysis for account form (unmanaged)</a><br/>
 <a href="../master/managedSolutions/SWOTMatrixforAccount_1_0_0_0_managed.zip">SWOT Analysis for account form (managed)</a><br/>
@@ -59,6 +59,9 @@ Note: Web demo is still on Angular 7 - Update to current version in work
 <a href="../master/managedSolutions/SWOTMatrixforOpportunity_1_0_0_0_managed.zip">SWOT Analysis for opportunity form (managed)</a><br/>
 
 <a href="../master/managedSolutions/quickinstall_guide.pdf">Installation guide</a>
+
+### V1.0 Solution for Opportunity (Dynamics 9.0) - OnPremise
+<a href="../master/managedSolutions/'D365SwotMatrixForOpportunity_1_0_0_0_managed_onprem.zip'">SWOT Analysis for opportunity form (managed) OnPrem</a><br/>
 
 You may use the unmanaged solution to add the SWOT Analysis to your custom entity form. In this case you need the following fields on the custom entity:
 
