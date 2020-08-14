@@ -63,6 +63,10 @@ Note: Web demo is still on Angular 7 - Update to current version in work
 ### V1.0 Solution for Opportunity (Dynamics 9.0) - OnPremise
 <a href="../master/managedSolutions/D365SwotMatrixForOpportunity_1_0_0_0_managed_onprem.zip">SWOT Analysis for opportunity form (managed) OnPrem</a><br/>
 
+Note: Name of html webresource is mey_d365swotindex.html , please follow <a href="../master/managedSolutions/quickinstall_guide.pdf">Installation guide</a> how to add the web resource to the opportunity form.
+
+### Hints for custom entity use
+
 You may use the unmanaged solution to add the SWOT Analysis to your custom entity form. In this case you need the following fields on the custom entity:
 
 * mey_swot_strengths (Multiline text 2000)
