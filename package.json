@@ -26,8 +26,8 @@
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.19",
-    "@angular-devkit/build-optimizer": "^0.803.19",
+    "@angular-devkit/build-angular": "^15.0.0",
+    "@angular-devkit/build-optimizer": "^0.1302.1",
     "@angular/cli": "8.3.19",
     "@angular/compiler": "^8.2.14",
     "@angular/compiler-cli": "^8.2.14",
@@ -51,7 +51,7 @@
     "typescript": "~3.4.5",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.9.0"
   }
 }
